@@ -671,11 +671,8 @@ void WebSocketsServer::handleNewClients(void) {
 #endif
 
 // store new connection
-#if(WEBSOCKETS_NETWORK_TYPE == NETWORK_WIFI_NINA)
-        WEBSOCKETS_NETWORK_CLASS * tcpClient = new WEBSOCKETS_NETWORK_CLASS(_server->available());
-#else
-    WEBSOCKETS_NETWORK_CLASS * tcpClient = new WEBSOCKETS_NETWORK_CLASS(_server->accept());
-#endif
+WEBSOCKETS_NETWORK_CLASS * tcpClient = new WEBSOCKETS_NETWORK_CLASS(_server->available());
+
 
         if(!tcpClient) {
             DEBUG_WEBSOCKETS("[WS-Client] creating Network class failed!");
