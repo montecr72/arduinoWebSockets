@@ -1,3 +1,6 @@
+Эта ветка исправляет баг для ESP-01 https://github.com/Links2004/arduinoWebSockets/issues/946
+по сути изменяется 1 строчка смотри в History 
+
 WebSocket Server and Client for Arduino [![Build Status](https://github.com/Links2004/arduinoWebSockets/actions/workflows/main.yml/badge.svg?branch=master)](https://github.com/Links2004/arduinoWebSockets/actions?query=branch%3Amaster)
 ===========================================
 
